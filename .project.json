@@ -1,0 +1,6 @@
+{
+  "deploy": {
+    "destination": "S4H",
+    "name": "zcovid19_v2"
+  }
+}

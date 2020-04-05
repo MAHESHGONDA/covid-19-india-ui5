@@ -1,0 +1,259 @@
+<mvc:View controllerName="com.covid19.india.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:f="sap.f" xmlns:control="com.covid19.india.control"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App id="appId">
+		<pages>
+			<Page id="page" enableScrolling="true" title="{i18n>covidTitle}">
+				<HeaderContainer></HeaderContainer>
+				<content>
+					<Panel backgroundDesign="Solid" class="panelBottomBorder">
+						<f:GridList class="">
+							<f:GridListItem class="redbackgroundCss">
+								<VBox>
+									<VBox class="sapUiSmallMargin">
+										<html:div class="iconSizeCss sapUiSmallMarginRight">
+											<core:Icon src="sap-icon://wounds-doc"></core:Icon>
+										</html:div>
+										<Label class="redcolorCountLabel fontCountSizeCss" text="{/selectedData/summary/confirmedCasesIndian}" wrapping="true"/>
+										<Title class="redcolorCountLabel fontCountLabelSizeCss" text="{i18n>confirmed}" wrapping="true"/>
+									</VBox>
+								</VBox>
+							</f:GridListItem>
+							<f:GridListItem class="greenbackgroundCss">
+								<VBox>
+									<VBox class="sapUiSmallMargin">
+										<html:div class="iconSizeCss greencolorCountLabel sapUiSmallMarginRight">
+											<core:Icon src="sap-icon://physical-activity"></core:Icon>
+										</html:div>
+										<Label class="greencolorCountLabel fontCountSizeCss" text="{/selectedData/summary/discharged}" wrapping="true"/>
+										<Title class="greencolorCountLabel fontCountLabelSizeCss" text="{i18n>recovered}" wrapping="true"/>
+									</VBox>
+								</VBox>
+							</f:GridListItem>
+							<f:GridListItem class="graybackgroundCss">
+								<VBox>
+									<VBox class="sapUiSmallMargin">
+										<html:div class="iconSizeCss sapUiSmallMarginRight">
+											<core:Icon src="sap-icon://bed"></core:Icon>
+										</html:div>
+										<Label class="morronColor fontCountSizeCss" text="{/selectedData/summary/deaths}" wrapping="true"/>
+										<Title class="morronColor fontCountLabelSizeCss" text="{i18n>deaths}" wrapping="true"/>
+									</VBox>
+								</VBox>
+							</f:GridListItem>
+						</f:GridList>
+						<!--<f:GridList class="">-->
+						<!--	<f:GridListItem class="redbackgroundCss">-->
+						<!--		<VBox>-->
+						<!--			<VBox class="sapUiSmallMargin">-->
+						<!--				<html:div class="iconSizeCss sapUiSmallMarginRight">-->
+						<!--					<core:Icon src="sap-icon://wounds-doc"></core:Icon>-->
+						<!--				</html:div>-->
+						<!--				<Label class="redcolorCountLabel fontCountSizeCss" text="{/selectedData/cases}" wrapping="true"/>-->
+						<!--				<Title class="redcolorCountLabel fontCountLabelSizeCss" text="{i18n>confirmed}" wrapping="true"/>-->
+						<!--			</VBox>-->
+						<!--		</VBox>-->
+						<!--	</f:GridListItem>-->
+						<!--	<f:GridListItem class="greenbackgroundCss">-->
+						<!--		<VBox>-->
+						<!--			<VBox class="sapUiSmallMargin">-->
+						<!--				<html:div class="iconSizeCss greencolorCountLabel sapUiSmallMarginRight">-->
+						<!--					<core:Icon src="sap-icon://physical-activity"></core:Icon>-->
+						<!--				</html:div>-->
+						<!--				<Label class="greencolorCountLabel fontCountSizeCss" text="{/selectedData/recovered}" wrapping="true"/>-->
+						<!--				<Title class="greencolorCountLabel fontCountLabelSizeCss" text="{i18n>recovered}" wrapping="true"/>-->
+						<!--			</VBox>-->
+						<!--		</VBox>-->
+						<!--	</f:GridListItem>-->
+						<!--	<f:GridListItem class="graybackgroundCss">-->
+						<!--		<VBox>-->
+						<!--			<VBox class="sapUiSmallMargin">-->
+						<!--				<html:div class="iconSizeCss sapUiSmallMarginRight">-->
+						<!--					<core:Icon src="sap-icon://bed"></core:Icon>-->
+						<!--				</html:div>-->
+						<!--				<Title class="morronColor fontCountLabelSizeCss" text="{i18n>deaths}" wrapping="true"/>-->
+						<!--				<Label class="morronColor fontCountSizeCss" text="{/selectedData/deaths}" wrapping="true"/>-->
+						<!--			</VBox>-->
+						<!--		</VBox>-->
+						<!--	</f:GridListItem>-->
+						<!--	<f:GridListItem class="graybackgroundCss">-->
+						<!--		<VBox>-->
+						<!--			<VBox class="sapUiSmallMargin">-->
+						<!--				<html:div class="iconSizeCss sapUiSmallMarginRight">-->
+						<!--					<core:Icon src="sap-icon://stethoscope"></core:Icon>-->
+						<!--				</html:div>-->
+						<!--				<Label class="redcolorCountLabel fontCountSizeCss" text="{/selectedData/todayCases}" wrapping="true"/>-->
+						<!--				<Title class="redcolorCountLabel fontCountLabelSize500Css" text="{i18n>todayCases}" wrapping="true"/>-->
+						<!--			</VBox>-->
+						<!--		</VBox>-->
+						<!--	</f:GridListItem>-->
+						<!--	<f:GridListItem class="bluebackgroundCssDel">-->
+						<!--		<VBox>-->
+						<!--			<VBox class="sapUiSmallMargin">-->
+						<!--				<html:div class="iconSizeCss sapUiSmallMarginRight">-->
+						<!--					<core:Icon src="sap-icon://bed"></core:Icon>-->
+						<!--				</html:div>-->
+						<!--				<Label class="morronColor fontCountSizeCss" text="{/selectedData/todayDeaths}" wrapping="true"/>-->
+						<!--				<Title class="morronColor fontCountLabelSize500Css" text="{i18n>todayDeaths}" wrapping="true"/>-->
+						<!--			</VBox>-->
+						<!--		</VBox>-->
+						<!--	</f:GridListItem>-->
+						<!--	<f:GridListItem class="bluebackgroundCssDel">-->
+						<!--		<VBox>-->
+						<!--			<VBox class="sapUiSmallMargin">-->
+						<!--				<html:div class="iconSizeCss sapUiSmallMarginRight">-->
+						<!--					<core:Icon src="sap-icon://electronic-medical-record"></core:Icon>-->
+						<!--				</html:div>-->
+						<!--				<Label class="blackcolorCountLabel fontCountSizeCss" text="{/selectedData/active}" wrapping="true"/>-->
+						<!--				<Title class="blackcolorCountLabel fontCountLabelSize500Css" text="{i18n>active}" wrapping="true"/>-->
+						<!--			</VBox>-->
+						<!--		</VBox>-->
+						<!--	</f:GridListItem>-->
+						<!--	<f:GridListItem class="bluebackgroundCssDel">-->
+						<!--		<VBox>-->
+						<!--			<VBox class="sapUiSmallMargin">-->
+						<!--				<html:div class="iconSizeCss sapUiSmallMarginRight">-->
+						<!--					<core:Icon src="sap-icon://syringe"></core:Icon>-->
+						<!--				</html:div>-->
+						<!--				<Label class="blackcolorCountLabel fontCountSizeCss" text="{/selectedData/critical}" wrapping="true"/>-->
+						<!--				<Title class="blackcolorCountLabel fontCountLabelSize500Css" text="{i18n>critical}" wrapping="true"/>-->
+						<!--			</VBox>-->
+						<!--		</VBox>-->
+						<!--	</f:GridListItem>-->
+						<!--</f:GridList>-->
+					</Panel>
+					<!--botttom-->
+					<Panel width="100%" backgroundDesign="Solid">
+						<Toolbar >
+							<Title text="{i18n>historyHeader}"/>
+							<ToolbarSpacer/>
+							<SegmentedButton selectedKey="Confirmed" selectionChange="onChartTypeChange">
+								<items>
+									<SegmentedButtonItem icon="sap-icon://line-charts" key="line"/>
+									<SegmentedButtonItem icon="sap-icon://bar-chart" key="bar"/>
+								</items>
+							</SegmentedButton>
+							<Select forceSelection="false" selectedKey="Confirmed" change="onHistoryChange">
+								<core:Item key="Confirmed" text="{i18n>confirmed} cases"/>
+								<core:Item key="Deaths" text="{i18n>deaths} cases"/>
+							</Select>
+						</Toolbar>
+						<!--<HBox alignItems="Start" justifyContent="Center">-->
+						<!--	<SegmentedButton selectedKey="Confirmed" selectionChange="onHistoryChange">-->
+						<!--		<items>-->
+						<!--			<SegmentedButtonItem text="{i18n>confirmed}" key="Confirmed"/>-->
+						<!--			<SegmentedButtonItem text="{i18n>deaths}"/>-->
+						<!--		</items>-->
+						<!--	</SegmentedButton>-->
+						<!--</HBox>-->
+						<ScrollContainer height="100%" width="100%" vertical="true" focusable="true" class="sapUiLargeMarginBottom">
+							<control:History id="historyId" chartType="{/chartType}" confirmedCasesIndian="{/confirmedCasesIndian}" history="{/history}"/>
+						</ScrollContainer>
+						<!--<FlexBox height="100px" alignItems="End" justifyContent="Center">-->
+						<!--	<items>-->
+						<!--		<SegmentedButton selectedKey="Confirmed" selectionChange="onChartTypeChange">-->
+						<!--			<items>-->
+						<!--				<SegmentedButtonItem icon="sap-icon://line-charts" key="line"/>-->
+						<!--				<SegmentedButtonItem icon="sap-icon://bar-chart"  key="bar"/>-->
+						<!--			</items>-->
+						<!--		</SegmentedButton>-->
+						<!--	</items>-->
+						<!--</FlexBox>-->
+						<!--</VBox>-->
+					</Panel>
+					<!--<VBox>-->
+					<SplitContainer id="SplitContDemo" initialDetail="detail" initialMaster="master" mode="ShowHideMode">
+						<masterPages>
+							<Page id="master" title="{i18n>allStates}" backgroundDesign="List" showNavButton="false">
+								<subHeader>
+									<OverflowToolbar>
+										<SearchField liveChange=".onSearch" width="100%"/>
+									</OverflowToolbar>
+								</subHeader>
+								<List rememberSelections="true" updateFinished="onListUpdate" items="{/data}" id="idList" mode="SingleSelectMaster"
+									selectionChange="onListItemPress">
+									<ObjectListItem title="{loc}" number="{confirmedCasesIndian}" numberUnit="{CurrencyCode}">
+										<firstStatus>
+											<ObjectStatus text="{i18n>confirmedCasesIndian}" state="Error"/>
+										</firstStatus>
+										<ObjectAttribute text="{deaths} : {i18n>deaths}" visible="{/mobile}"/>
+										<ObjectAttribute text="{discharged} : {i18n>recovered}" visible="{/mobile}"/>
+									</ObjectListItem>
+								</List>
+							</Page>
+						</masterPages>
+						<detailPages>
+							<Page id="detail" title="{/selectedDataCountry/loc}" backgroundDesign="Solid" class="whitebackCss" enableScrolling="false">
+								<headerContent></headerContent>
+								<!--<Panel backgroundDesign="Solid" class="panelBottomBorder">-->
+								<!--	<f:GridList class="">-->
+								<!--		<f:GridListItem class="redbackgroundCss">-->
+								<!--			<VBox>-->
+								<!--				<VBox class="sapUiSmallMargin">-->
+								<!--					<html:div class="iconSizeCss sapUiSmallMarginRight">-->
+								<!--						<core:Icon src="sap-icon://wounds-doc"></core:Icon>-->
+								<!--					</html:div>-->
+								<!--					<Label class="redcolorCountLabel fontCountSizeCss" text="{/selectedDataCountry/confirmedCasesIndian}" wrapping="true"/>-->
+								<!--					<Title class="redcolorCountLabel fontCountLabelSizeCss" text="{i18n>confirmed}" wrapping="true"/>-->
+								<!--				</VBox>-->
+								<!--			</VBox>-->
+								<!--		</f:GridListItem>-->
+								<!--		<f:GridListItem class="greenbackgroundCss">-->
+								<!--			<VBox>-->
+								<!--				<VBox class="sapUiSmallMargin">-->
+								<!--					<html:div class="iconSizeCss greencolorCountLabel sapUiSmallMarginRight">-->
+								<!--						<core:Icon src="sap-icon://physical-activity"></core:Icon>-->
+								<!--					</html:div>-->
+								<!--					<Label class="greencolorCountLabel fontCountSizeCss" text="{/selectedDataCountry/discharged}" wrapping="true"/>-->
+								<!--					<Title class="greencolorCountLabel fontCountLabelSizeCss" text="{i18n>recovered}" wrapping="true"/>-->
+								<!--				</VBox>-->
+								<!--			</VBox>-->
+								<!--		</f:GridListItem>-->
+								<!--		<f:GridListItem class="graybackgroundCss">-->
+								<!--			<VBox>-->
+								<!--				<VBox class="sapUiSmallMargin">-->
+								<!--					<html:div class="iconSizeCss sapUiSmallMarginRight">-->
+								<!--						<core:Icon src="sap-icon://bed"></core:Icon>-->
+								<!--					</html:div>-->
+								<!--					<Label class="morronColor fontCountSizeCss" text="{/selectedDataCountry/deaths}" wrapping="true"/>-->
+								<!--					<Title class="morronColor fontCountLabelSizeCss" text="{i18n>deaths}" wrapping="true"/>-->
+								<!--				</VBox>-->
+								<!--			</VBox>-->
+								<!--		</f:GridListItem>-->
+								<!--	</f:GridList>-->
+								<!--</Panel>-->
+								<Panel backgroundDesign="Solid">
+									<Toolbar >
+										<Title text="{i18n>historyHeader}"/>
+										<ToolbarSpacer/>
+										<SegmentedButton selectedKey="Confirmed" selectionChange="onStateChartTypeChange">
+											<items>
+												<SegmentedButtonItem icon="sap-icon://line-charts" key="line"/>
+												<SegmentedButtonItem icon="sap-icon://bar-chart" key="bar"/>
+											</items>
+										</SegmentedButton>
+										<Select forceSelection="false" selectedKey="Confirmed" change="onStateHistoryChange">
+											<core:Item key="Confirmed" text="{i18n>confirmed} cases"/>
+											<core:Item key="Deaths" text="{i18n>deaths} cases"/>
+										</Select>
+									</Toolbar>
+									<!--	<headerToolbar>-->
+									<!--<OverflowToolbar height="3rem">-->
+									<!--	<Title text="{i18n>historyState}"/>-->
+									<!--	<ToolbarSpacer/>-->
+									<!--</OverflowToolbar>-->
+									<!--	</headerToolbar>-->
+									<!--	<control:History id="historyId" history="{/history}"/>-->
+									<ScrollContainer height="100%" width="100%" vertical="true" horizontal="true">
+										<control:History chartType="{/stateChartType}" id="statesHistoryId" selectedState="{/selectedDataCountry/loc}" confirmedCasesIndian="{/confirmedCasesIndianState}"
+											history="{/history}"/>
+									</ScrollContainer>
+								</Panel>
+							</Page>
+						</detailPages>
+					</SplitContainer>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

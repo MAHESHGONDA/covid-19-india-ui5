@@ -1,0 +1,288 @@
+/* Enter your custom styles here */
+
+
+/* Enter your custom styles here */
+
+.blueHeader {
+    background-color: #0000ff5e !important;
+}
+
+.blackColor {
+    color: black;
+}
+
+.gridContainerHeader {
+    border-bottom: 1px solid #cbd5e0;
+    padding: 10px !important;
+    /*margin: 10px;*/
+    text-align: center;
+    background-color: white;
+}
+
+.sapyardLogo {
+    /*position: absolute;*/
+    /*z-index: 10;*/
+    /*bottom: 0;*/
+    /*right: 10px;*/
+}
+
+.sapyardLogo > * {
+    width: 150px;
+}
+
+.redcolorCountLabel {
+    color: red;
+}
+
+.greencolorCountLabel {
+    color: #38a169;
+}
+
+.morronColor {
+    color: #800000 !important;
+}
+
+.graycolorCountLabel {
+    color: gray;
+}
+
+.blackcolorCountLabel {
+    color: black;
+}
+
+.iconSizeCss {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.fontCountLabelSize500Css {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.fontCountLabelSizeCss {
+    font-size: 1rem;
+    font-weight: 600;
+    /*font-size: 1rem;*/
+    /*font-weight: 600;*/
+    /*bottom: -1rem;*/
+    /*right: -2px;*/
+    /*float: right;*/
+}
+
+.fontCountSizeCss {
+    font-size: 1.87rem;
+    font-weight: 700;
+}
+
+.greenbackgroundCss {
+    color: #38a16947;
+    /*padding: 10px;*/
+    /* background: red; */
+    /*background-color: #00800030;*/
+    border: 0 solid #e2e8f0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+}
+
+.graybackgroundCss {
+    color: #718096;
+    /*padding: 10px;*/
+    /* background: red; */
+    /*background-color: #80808052;*/
+    border: 0 solid #e2e8f0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+}
+
+.redbackgroundCss {
+    color: #e53e3e;
+    /*padding: 10px;*/
+    /* background: red; */
+    /*background-color: #fed7d7;*/
+    border: 0 solid #e2e8f0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+}
+
+
+/*.bluebackgroundCss {*/
+
+
+/*    background-color: #0c24af00;*/
+
+
+/*    border: 1px solid #fafafa !important;*/
+
+
+/*    padding: 10px !important;*/
+
+
+/*    border-radius: 50px 20px !important;*/
+
+
+/*    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);*/
+
+
+/*}*/
+
+
+/*.comboboxBackgroundCss {*/
+
+
+/*    color: #38a16947;*/
+
+
+/*padding: 10px;*/
+
+
+/* background: red; */
+
+
+/*    background-color: #00800030;*/
+
+
+/*    border: 0 solid #e2e8f0;*/
+
+
+/*    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);*/
+
+
+/*}*/
+
+
+/*.color_red_bottom {*/
+
+
+/*	background-color: #fed7d7;*/
+
+
+/*    border: 0 solid #e2e8f0;*/
+
+
+/*    font-weight: 600;*/
+
+
+/*    padding-top: .25rem;*/
+
+
+/*    padding-bottom: .25rem;*/
+
+
+/*}*/
+
+.panelBottomBorder > * {
+    border-bottom: 0px solid #ccc0 !important;
+}
+
+
+/**/
+
+/*path {*/
+/*    stroke: #fff;*/
+/*}*/
+
+/*path:hover {*/
+/*    opacity: 0.9;*/
+/*}*/
+
+/*rect:hover {*/
+/*    fill: blue;*/
+/*}*/
+
+/*.axis {*/
+/*    font: 10px sans-serif;*/
+/*}*/
+
+/*.legend tr {*/
+/*    border-bottom: 1px solid grey;*/
+/*}*/
+
+/*.legend tr:first-child {*/
+/*    border-top: 1px solid grey;*/
+/*}*/
+
+/*.axis path,*/
+/*.axis line {*/
+/*    fill: none;*/
+/*    stroke: #000;*/
+/*    shape-rendering: crispEdges;*/
+/*}*/
+
+/*.x.axis path {*/
+/*    display: none;*/
+/*}*/
+
+/*.legend {*/
+/*    margin-bottom: 76px;*/
+/*    display: inline-block;*/
+/*    border-collapse: collapse;*/
+/*    border-spacing: 0px;*/
+/*}*/
+
+/*.legend td {*/
+/*    padding: 4px 5px;*/
+/*    vertical-align: bottom;*/
+/*}*/
+
+/*.legendFreq,*/
+/*.legendPerc {*/
+/*    align: right;*/
+/*    width: 50px;*/
+/*}*/
+
+
+/*line history*/
+
+.line {
+    fill: none;
+    stroke: red;
+    stroke-width: 2.5px;
+}
+.lineMarron {
+    fill: none;
+    stroke: #800000;
+    stroke-width: 2.5px;
+}
+
+rect text {
+    font: 10px sans-serif;
+    color: blue;
+}
+
+rect text.value {
+    font-size: 120%;
+    fill: red;    
+}
+
+.label {
+    font-size: 13px;
+}
+
+
+/*.bar {*/
+
+
+/*    fill: cornflowerblue;*/
+
+
+/*}*/
+
+
+/*.bar:hover {*/
+
+
+/*    fill: pink;*/
+
+
+/*}*/
+
+
+/*.axis--x path {*/
+
+
+/*    display: none;*/
+
+
+/*}*/
+
+.whitebackCss .sapMPageHeader > * {
+    background-color: white;
+}

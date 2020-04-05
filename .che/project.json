@@ -1,0 +1,1 @@
+{"type":"sap.web","builders":{"configs":{}},"runners":{"configs":{}},"attributes":{"sap.watt.common.setting":["{\"deploy\":{\"destination\":\"S4H\",\"name\":\"zcovid19_v2\"},\"projectType\":[\"sap.watt.uitools.ide.web\",\"sap.watt.uitools.ide.fiori\"]}"]},"mixinTypes":[]}
